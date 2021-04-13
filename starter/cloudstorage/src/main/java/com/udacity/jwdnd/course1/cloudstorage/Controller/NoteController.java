@@ -9,25 +9,25 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class NotesController {
+public class NoteController {
 
     private NoteService noteService;
     private UserService userService;
 
-    public NotesController(UserService userService, NoteService noteService) {
+    public NoteController(UserService userService, NoteService noteService) {
         this.userService = userService;
         this.noteService = noteService;
     }
 
     @PostMapping("/insert-note")
-    public String insertNote(NoteForm noteForm, Model model, Authentication authentication) {
+    public String insertNote(NoteForm noteform, Model model, Authentication authentication) {
 
         User user = userService.getUser(authentication.getName());
 
         Note note = new Note(noteForm.getNoteId(), noteForm.getNoteTitle(),noteForm.getNoteDescritption(),user.getUserid());
         noteService.addNote(note);
 
-        model.addAttribute(s:"notes", noteService.getNotes(user.getUserid()));
+        model.addAttribute("notes", noteService.getNotes(user.getUserid()));
         return "home";
     }
 }
