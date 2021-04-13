@@ -9,13 +9,13 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
 @Mapper
-public class NoteMapper {
+public interface NoteMapper {
 
-    @Select("SELECT * FROM N0TES WHERE userid = #{userId}")
+    @Select("select * from N0TES WHERE userid = #{userId}")
     List<Note> getNotesByUser(int userId);
 
-    @Insert("INSERT INTO NOTES(notetile, notedescription, userid) " +
-            "values(#{notetitle}, #{notedescription}, #{userid})")
-    @Options(useGeneratedKeys = true, keyProperty = "noteid")
+    @Insert("insert into NOTES(noteTitle, noteDescription, userid) " +
+            "values(#{noteTitle}, #{noteDescription}, #{userid})")
+    @Options(useGeneratedKeys = true, keyProperty = "noteId")
     int addNote(Note note);
 }

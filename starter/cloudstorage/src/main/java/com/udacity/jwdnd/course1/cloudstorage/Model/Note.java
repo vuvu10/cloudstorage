@@ -15,20 +15,32 @@ public class Note {
         this.userid = userid;
     }
 
-    public Integer getNoteid() { return noteid}
+    public Integer getNoteid() {
+        return noteid;
+    }
 
-    public void setNoteid(Integer noteid) { this.noteid = noteid; }
+    public void setNoteid(Integer noteid) {
+        this.noteid = noteid;
+    }
 
-    public String getNotetile() { return notetile; }
+    public String getNotetile() {
+        return notetile;
+    }
 
-    public void setNotetile(String notetile) { this.notetile = notetile; }
+    public void setNotetile(String notetile) {
+        this.notetile = notetile;
+    }
 
     public String getNoteDescription() { return noteDescription; }
 
     public void setNoteDescription(String noteDescription) { this.noteDescription = noteDescription; }
 
-    public int getUserid() { return userid; }
+    public int getUserid() {
+        return userid;
+    }
 
-    public void setUserid(int userid) { this.userid = userid; }
+    public void setUserid(int userid) {
+        this.userid = userid;
+    }
 
 }
