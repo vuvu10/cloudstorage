@@ -1,4 +1,4 @@
-package com.udacity.jwdnd.course1.cloudstorage.Services;
+package com.udacity.jwdnd.course1.cloudstorage.Service;
 
 import com.udacity.jwdnd.course1.cloudstorage.Mapper.UserMapper;
 import com.udacity.jwdnd.course1.cloudstorage.Model.User;

@@ -1,4 +1,4 @@
-package com.udacity.jwdnd.course1.cloudstorage.Services;
+package com.udacity.jwdnd.course1.cloudstorage.Service;
 
 import com.udacity.jwdnd.course1.cloudstorage.Mapper.UserMapper;
 import com.udacity.jwdnd.course1.cloudstorage.Model.User;
@@ -7,6 +7,8 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
 
 @Service
 public class AuthenticationService implements AuthenticationProvider{
@@ -21,8 +23,8 @@ public class AuthenticationService implements AuthenticationProvider{
 
     @Override
     public Authentication authenticate(Authentication authenticate) throws AuthenticationException {
-        String username = Authentication.getName();
-        String password = Authentication.getCredentials().toString();
+        String username = authenticate.getName();
+        String password = authenticate.getCredentials().toString();
 
         User user = userMapper.getUser(username);
 

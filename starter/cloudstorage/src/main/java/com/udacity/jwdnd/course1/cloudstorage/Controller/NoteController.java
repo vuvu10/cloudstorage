@@ -1,8 +1,8 @@
 package com.udacity.jwdnd.course1.cloudstorage.Controller;
 
 import com.udacity.jwdnd.course1.cloudstorage.Model.Note;
-import com.udacity.jwdnd.course1.cloudstorage.Services.NoteService;
-import com.udacity.jwdnd.course1.cloudstorage.Services.UserService;
+import com.udacity.jwdnd.course1.cloudstorage.Service.NoteService;
+import com.udacity.jwdnd.course1.cloudstorage.Service.UserService;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

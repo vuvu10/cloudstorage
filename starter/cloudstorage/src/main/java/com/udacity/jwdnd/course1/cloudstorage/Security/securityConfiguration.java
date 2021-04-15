@@ -1,7 +1,7 @@
 package com.udacity.jwdnd.course1.cloudstorage.Security;
 
 
-import com.udacity.jwdnd.course1.cloudstorage.Services.AuthenticationService;
+import com.udacity.jwdnd.course1.cloudstorage.Service.AuthenticationService;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
