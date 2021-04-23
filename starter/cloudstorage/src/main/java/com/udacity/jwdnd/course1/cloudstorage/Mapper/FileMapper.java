@@ -8,11 +8,11 @@ import java.util.List;
 @Mapper
 public interface FileMapper {
 
-    @Select("select * from files where userid = #{userId}")
+    @Select("select * from files where userid = #{userid}")
     List<File> getFiles(int userId);
 
-    @Select("select * from files where filename = #{filename}")
-    File getFilebyFilename(String filename);
+    @Select("select * from files where filename = #{filename} and userid = #{userid}")
+    File getFileByName(String filename);
 
     @Delete("delete from files where fileid = #{fileId}")
     void deleteFile(int fileId);

@@ -26,7 +26,7 @@ public class HomeController {
 
 
     @GetMapping
-    public String homeView(NoteForm noteForm, File file, ) {
+    public String homeView(NoteForm noteForm, File file ) {
 
 
 
