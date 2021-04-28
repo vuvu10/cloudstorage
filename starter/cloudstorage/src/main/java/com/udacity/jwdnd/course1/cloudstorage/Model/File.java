@@ -3,7 +3,7 @@ package com.udacity.jwdnd.course1.cloudstorage.Model;
 public class File {
 
     private int fileId;
-    private int userid;
+    private int userId;
     private byte[] filedata;
     private String filename;
     private String contenttype;
@@ -37,12 +37,12 @@ public class File {
         this.filesize = filesize;
     }
 
-    public int getUserid() {
-        return userid;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setUserid(int userid) {
-        this.userid = userid;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public byte[] getFiledata() {

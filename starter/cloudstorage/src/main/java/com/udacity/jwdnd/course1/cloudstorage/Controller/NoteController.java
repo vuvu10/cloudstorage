@@ -28,10 +28,10 @@ public class NoteController {
 
         User user = userService.getUser(authentication.getName());
 
-        Note note = new Note(noteForm.getNoteId(), noteForm.getNoteTitle(),noteForm.getNoteDescritption(),user.getUserid());
+        Note note = new Note(noteForm.getNoteId(), noteForm.getNoteTitle(),noteForm.getNoteDescritption(),user.getUserId());
         noteService.addNote(note);
 
-        model.addAttribute("notes", noteService.getNotes(user.getUserid()));
+        model.addAttribute("notes", noteService.getNotes(user.getUserId()));
         return "home";
     }
 

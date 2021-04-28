@@ -13,32 +13,25 @@ import java.util.List;
 public class FileService {
 
     private FileMapper fileMapper;
+    private UserService userService;
 
-    public FileService(FileMapper fileMapper) {
+    public FileService(FileMapper fileMapper, UserService userService) {
         this.fileMapper = fileMapper;
+        this.userService = userService;
     }
 
+
+
     public List<File> getAllUserFiles(int userId) {
+
         return fileMapper.getFiles(userId);
     }
 
-    public void createFile(File file) throws FileisInUseException {
-        if (this.fileMapper.getFileByName(file.getUserid(), file.getFilename()).isEmpty()) {
-            this.fileMapper.insert(file);
-        } else {
-            throw new FileisInUseException();
-        }
-
-
+    public File getFile(Integer fileId) {
+        return fileMapper.getFileById(fileId);
     }
 
-    public void deleteFile(int FileId) {
-        this.fileMapper.deleteFile(FileId);
-    }
-
-    public File getFileById(int FileId) {
-        return this.fileMapper.getFileById(FileId);
-    }
+    public  boolean
 
 
 
