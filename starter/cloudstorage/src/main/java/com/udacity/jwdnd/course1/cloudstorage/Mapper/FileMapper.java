@@ -14,13 +14,13 @@ public interface FileMapper {
     @Select("select * from files where filename = #{filename} and userid = #{userid}")
     File getFileByName(String filename);
 
-    @Delete("delete from files where fileid = #{fileId}")
+    @Delete("delete from files where fileId = #{fileId}")
     void deleteFile(int fileId);
 
-    @Insert("insert into files (filename, contenttype, filesize, userid, filedata) VALUES(#{filename}, #{contenttype}, #{filesize}, #{userid}, #{filedata})")
+    @Insert("insert into files (filename, contentType, filesize, userid, fileData) VALUES(#{filename}, #{contentType}, #{filesize}, #{userId}, #{fileData})")
     @Options(useGeneratedKeys = true, keyProperty = "fileId")
     int insert(File file);
 
-    @Select("select * from where fileid = #{fileId}")
-    File getFileById(int fielId);
+    @Select("select * from where fileId = #{fileId}")
+    File getFileById(int fileId);
 }
