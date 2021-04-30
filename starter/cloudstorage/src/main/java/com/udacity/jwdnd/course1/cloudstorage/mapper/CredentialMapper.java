@@ -1,8 +1,8 @@
-package com.udacity.jwdnd.course1.cloudstorage.Mapper;
+package com.udacity.jwdnd.course1.cloudstorage.mapper;
 
 
-import com.udacity.jwdnd.course1.cloudstorage.Model.Credential;
-import com.udacity.jwdnd.course1.cloudstorage.Model.User;
+import com.udacity.jwdnd.course1.cloudstorage.model.Credential;
+import com.udacity.jwdnd.course1.cloudstorage.model.User;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

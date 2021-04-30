@@ -1,9 +1,9 @@
-package com.udacity.jwdnd.course1.cloudstorage.Controller;
+package com.udacity.jwdnd.course1.cloudstorage.controller;
 
-import com.udacity.jwdnd.course1.cloudstorage.Model.Note;
-import com.udacity.jwdnd.course1.cloudstorage.Model.User;
-import com.udacity.jwdnd.course1.cloudstorage.Service.NoteService;
-import com.udacity.jwdnd.course1.cloudstorage.Service.UserService;
+import com.udacity.jwdnd.course1.cloudstorage.model.Note;
+import com.udacity.jwdnd.course1.cloudstorage.model.User;
+import com.udacity.jwdnd.course1.cloudstorage.service.NoteService;
+import com.udacity.jwdnd.course1.cloudstorage.service.UserService;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,7 +24,7 @@ public class NoteController {
     }
 
     @PostMapping("/insert-note")
-    public String insertNote(NoteForm Noteform, Model model, Authentication authentication) {
+    public String insertNote(NoteForm noteForm, Model model, Authentication authentication) {
 
         User user = userService.getUser(authentication.getName());
 

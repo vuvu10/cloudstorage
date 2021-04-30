@@ -1,4 +1,4 @@
-package com.udacity.jwdnd.course1.cloudstorage.Controller;
+package com.udacity.jwdnd.course1.cloudstorage.controller;
 
 import org.springframework.stereotype.Controller;
 

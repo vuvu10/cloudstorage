@@ -1,8 +1,7 @@
-package com.udacity.jwdnd.course1.cloudstorage.Service;
+package com.udacity.jwdnd.course1.cloudstorage.service;
 
-import com.udacity.jwdnd.course1.cloudstorage.Mapper.FileMapper;
-import com.udacity.jwdnd.course1.cloudstorage.Model.File;
-import com.udacity.jwdnd.course1.cloudstorage.Model.User;
+import com.udacity.jwdnd.course1.cloudstorage.mapper.FileMapper;
+import com.udacity.jwdnd.course1.cloudstorage.model.File;
 import org.springframework.stereotype.Service;
 //import org.springframework.web.multipart.MultipartFile;
 
