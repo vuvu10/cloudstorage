@@ -18,7 +18,12 @@ public class NoteForm {
     }
 
     public void setNoteId(Integer noteId) {
+
         this.noteId = noteId;
+    }
+
+    public String getNoteTitle() {
+        return noteTitle;
     }
 
     public void setNoteTitle(String noteTitle) {

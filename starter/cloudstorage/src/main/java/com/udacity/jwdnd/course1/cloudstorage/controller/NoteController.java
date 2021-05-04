@@ -23,6 +23,8 @@ public class NoteController {
         this.noteService = noteService;
     }
 
+    /**
+
     @PostMapping("/insert-note")
     public String insertNote(NoteForm noteForm, Model model, Authentication authentication) {
 
@@ -38,10 +40,6 @@ public class NoteController {
     @GetMapping("/delete/{id}")
     public String deleteNote(@PathVariable(name = "id") String id, RedirectAttributes redirectAttributes) {
 
-
-
-
-
-
     }
+    **/
 }

@@ -3,32 +3,32 @@ package com.udacity.jwdnd.course1.cloudstorage.model;
 
 
 public class Note {
-    private Integer noteid;
-    private String notetile;
+    private Integer noteId;
+    private String noteTitle;
     private String noteDescription;
     private int userId;
 
-    public Note(int noteid, String notetile, String noteDescription, int userId) {
-        this.noteid = noteid;
-        this.notetile = notetile;
+    public Note(int noteIdd, String noteTitle, String noteDescription, int userId) {
+        this.noteId = noteId;
+        this.noteTitle = noteTitle;
         this.noteDescription = noteDescription;
         this.userId = userId;
     }
 
-    public Integer getNoteid() {
-        return noteid;
+    public Integer getNoteId() {
+        return noteId;
     }
 
-    public void setNoteid(Integer noteid) {
-        this.noteid = noteid;
+    public void setNoteId(Integer noteId) {
+        this.noteId = noteId;
     }
 
-    public String getNotetile() {
-        return notetile;
+    public String getNoteTitle() {
+        return noteTitle;
     }
 
-    public void setNotetile(String notetile) {
-        this.notetile = notetile;
+    public void setNoteTitle(String noteTitle) {
+        this.noteTitle = noteTitle;
     }
 
     public String getNoteDescription() { return noteDescription; }
